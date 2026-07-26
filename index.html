@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EasyBites — bold, craveable fast food with a local soul."
+    />
+    <meta name="theme-color" content="#f0d0a0" />
+    <title>EasyBites — Always Yumm!</title>
+    <link rel="icon" href="/assets/easybites-mark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body class="intro-is-playing">
+    <div class="intro" data-intro aria-label="EasyBites introduction">
+      <div class="intro__circle intro__circle--tomato" aria-hidden="true"></div>
+      <div class="intro__circle intro__circle--green" aria-hidden="true"></div>
+      <div class="intro__circle intro__circle--cream" aria-hidden="true"></div>
+
+      <div class="intro__ingredients" aria-hidden="true">
+        <figure
+          class="intro__ingredient intro__ingredient--patty"
+          data-enter-x="-48"
+          data-enter-y="-52"
+          data-drift-x="20"
+          data-drift-y="-7"
+          data-exit-x="-190"
+          data-exit-y="-125"
+          data-start-rotate="-30"
+          data-end-rotate="14"
+          data-delay="-45"
+          data-duration="2670"
+          data-mid-scale="1.045"
+          data-return-scale="0.985"
+        >
+          <img
+            src="/assets/ingredients/patty.png"
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+        <figure
+          class="intro__ingredient intro__ingredient--lettuce"
+          data-enter-x="58"
+          data-enter-y="-70"
+          data-drift-x="-8"
+          data-drift-y="14"
+          data-exit-x="172"
+          data-exit-y="-145"
+          data-start-rotate="14"
+          data-end-rotate="-28"
+          data-delay="75"
+          data-duration="2410"
+          data-mid-scale="1.025"
+          data-return-scale="0.97"
+        >
+          <img
+            src="/assets/ingredients/lettuce.png"
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+        <figure
+          class="intro__ingredient intro__ingredient--tomato"
+          data-enter-x="76"
+          data-enter-y="12"
+          data-drift-x="-19"
+          data-drift-y="-11"
+          data-exit-x="205"
+          data-exit-y="72"
+          data-start-rotate="34"
+          data-end-rotate="68"
+          data-delay="20"
+          data-duration="2560"
+          data-mid-scale="1.055"
+          data-return-scale="0.975"
+        >
+          <img
+            src="/assets/ingredients/tomato.png"
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+        <figure
+          class="intro__ingredient intro__ingredient--jalapeno"
+          data-enter-x="-24"
+          data-enter-y="14"
+          data-drift-x="7"
+          data-drift-y="-8"
+          data-exit-x="-112"
+          data-exit-y="58"
+          data-start-rotate="-12"
+          data-end-rotate="20"
+          data-delay="-90"
+          data-duration="2290"
+          data-mid-scale="1.075"
+          data-return-scale="1.01"
+        >
+          <img
+            src="/assets/ingredients/jalapeno.png"
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+        <figure
+          class="intro__ingredient intro__ingredient--cheese"
+          data-enter-x="48"
+          data-enter-y="72"
+          data-drift-x="-23"
+          data-drift-y="9"
+          data-exit-x="155"
+          data-exit-y="165"
+          data-start-rotate="40"
+          data-end-rotate="-24"
+          data-delay="110"
+          data-duration="2720"
+          data-mid-scale="1.035"
+          data-return-scale="0.96"
+        >
+          <img
+            src="/assets/ingredients/cheese.png"
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+      </div>
+
+      <div class="intro__brand">
+        <div class="intro__logo-mask">
+          <img
+            class="intro__logo"
+            src="/assets/easybites-logo-transparent.png"
+            alt="EasyBites"
+          />
+        </div>
+        <p class="intro__tagline">Always Yumm!</p>
+      </div>
+
+      <button class="intro__skip" type="button" data-skip-intro>
+        Skip intro
+      </button>
+    </div>
+
+    <main class="site-shell">
+      <header class="site-header" data-site-header>
+        <a class="site-header__brand" href="/" aria-label="EasyBites home">
+          <img src="/assets/easybites-mark-transparent.png" alt="" />
+        </a>
+
+        <nav class="site-header__nav" aria-label="Primary navigation" data-primary-nav>
+          <a href="#menu">Menu</a>
+          <a href="#spotlight">Offers</a>
+          <a href="#story">Our story</a>
+          <a href="#locations">Locations</a>
+        </nav>
+
+        <div class="header-actions" data-discovery-actions inert>
+          <a class="header-actions__get" href="#spotlight">
+            <span>Get now</span>
+            <span aria-hidden="true">Get now</span>
+          </a>
+
+          <div class="header-control header-control--cart" data-panel-root="cart">
+            <button
+              class="header-icon-button"
+              type="button"
+              aria-label="Open cart"
+              aria-controls="cart-panel"
+              aria-expanded="false"
+              data-panel-trigger
+            >
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M7 11h18l-2 12H9L7 11Z" />
+                <path d="m11 11 2.5-5M21 11 18.5 6M13 15v4M19 15v4" />
+              </svg>
+              <span class="header-cart-count" data-cart-count hidden>0</span>
+            </button>
+          </div>
+
+          <div class="header-control header-control--menu" data-panel-root="menu">
+            <button
+              class="header-icon-button header-icon-button--menu"
+              type="button"
+              aria-label="Open navigation"
+              aria-controls="menu-panel"
+              aria-expanded="false"
+              data-panel-trigger
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <aside
+        class="floating-panel cart-panel"
+        id="cart-panel"
+        aria-hidden="true"
+        data-panel="cart"
+      >
+        <button class="floating-panel__close" type="button" aria-label="Close cart" data-panel-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="empty-bag" aria-hidden="true">
+          <span class="empty-bag__handle"></span>
+          <span class="empty-bag__body">
+            <img src="/assets/easybites-mark-transparent.png" alt="" />
+          </span>
+        </div>
+        <p class="cart-panel__eyebrow" data-cart-eyebrow>Your EasyBites bag is…</p>
+        <p class="cart-panel__empty" data-cart-status>Empty</p>
+        <a class="panel-cta" href="#best-sellers" data-cart-cta>Add some bites</a>
+      </aside>
+
+      <aside
+        class="floating-panel menu-panel"
+        id="menu-panel"
+        aria-hidden="true"
+        data-panel="menu"
+      >
+        <button class="floating-panel__close" type="button" aria-label="Close navigation" data-panel-close>
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="menu-panel__preview" aria-hidden="true">
+          <span class="menu-panel__preview-disc"></span>
+          <img
+            src="/assets/menu/easy-burger-box.png"
+            alt=""
+            data-menu-preview
+          />
+        </div>
+        <nav class="menu-panel__nav" aria-label="Expanded navigation">
+          <a href="#menu" data-preview="/assets/menu/easy-burger-box.png">Menu</a>
+          <a href="#spotlight" data-preview="/assets/menu/chilli-cheesy-fries.png">Spotlight</a>
+          <a href="#story" data-preview="/assets/menu/korean-popcorn.png">Our story</a>
+          <a href="#locations" data-preview="/assets/menu/hot-chicken-wings.png">Locations</a>
+          <a href="#faq" data-preview="/assets/ingredients/jalapeno.png">FAQ</a>
+        </nav>
+      </aside>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 id="hero-title">
+            <span class="hero__title-line hero__title-line--outline">
+              Big crunch.
+            </span>
+            <span class="hero__title-line hero__title-line--solid">
+              Bigger
+            </span>
+            <span class="hero__title-line hero__title-line--green">
+              cravings.
+            </span>
+          </h1>
+
+          <p class="hero__copy">
+            Fried chicken, loaded fries, burgers and bold global
+            flavours—made fresh and delivered fast.
+          </p>
+
+          <div class="hero__actions">
+            <a class="motion-button motion-button--primary" href="#spotlight">
+              <span class="motion-button__label">
+                <span>Meet the icons</span>
+                <span aria-hidden="true">Meet the icons</span>
+              </span>
+              <span class="motion-button__icon" aria-hidden="true">→</span>
+            </a>
+
+            <a class="hero__text-link" href="#menu">
+              Explore the menu
+              <span aria-hidden="true">↘</span>
+            </a>
+          </div>
+        </div>
+
+        <section class="spotlight" id="spotlight" aria-label="EasyBites spotlight" data-spotlight>
+        <div class="spotlight__stage">
+          <article class="spotlight-slide is-active" data-spotlight-slide>
+            <p class="spotlight-slide__number">Spotlight no.01</p>
+            <h2 class="spotlight-slide__name">Korean Popcorn</h2>
+            <div class="spotlight-slide__halo" aria-hidden="true"></div>
+            <div class="spotlight-slide__ingredients" aria-hidden="true">
+              <img class="orbit-ingredient orbit-ingredient--a" src="/assets/ingredients/jalapeno.png" alt="" />
+              <img class="orbit-ingredient orbit-ingredient--b" src="/assets/ingredients/tomato.png" alt="" />
+              <img class="orbit-ingredient orbit-ingredient--c" src="/assets/ingredients/cheese.png" alt="" />
+            </div>
+            <img
+              class="spotlight-slide__product"
+              src="/assets/menu/korean-popcorn.png"
+              alt="Korean Popcorn Large"
+            />
+            <div class="spotlight-slide__footer">
+              <p><span>Crunchy Korean glaze</span><strong>₹259</strong></p>
+              <a class="spotlight-cta" href="#order">Get now</a>
+            </div>
+          </article>
+
+          <article class="spotlight-slide" data-spotlight-slide aria-hidden="true">
+            <p class="spotlight-slide__number">Spotlight no.02</p>
+            <h2 class="spotlight-slide__name">Easy Burger Box</h2>
+            <div class="spotlight-slide__halo" aria-hidden="true"></div>
+            <div class="spotlight-slide__ingredients" aria-hidden="true">
+              <img class="orbit-ingredient orbit-ingredient--a" src="/assets/ingredients/lettuce.png" alt="" />
+              <img class="orbit-ingredient orbit-ingredient--b" src="/assets/ingredients/tomato.png" alt="" />
+              <img class="orbit-ingredient orbit-ingredient--c" src="/assets/ingredients/cheese.png" alt="" />
+            </div>
+            <img
+              class="spotlight-slide__product"
+              src="/assets/menu/easy-burger-box.png"
+              alt="Easy Burger Box"
+            />
+            <div class="spotlight-slide__footer">
+              <p><span>The full-craving combo</span><strong>₹284</strong></p>
+              <a class="spotlight-cta" href="#order">Get now</a>
+            </div>
+          </article>
+
+          <article class="spotlight-slide" data-spotlight-slide aria-hidden="true">
+            <p class="spotlight-slide__number">Spotlight no.03</p>
+            <h2 class="spotlight-slide__name">Hot Chicken Wings</h2>
+            <div class="spotlight-slide__halo" aria-hidden="true"></div>
+            <div class="spotlight-slide__ingredients" aria-hidden="true">
+              <img class="orbit-ingredient orbit-ingredient--a" src="/assets/ingredients/jalapeno.png" alt="" />
+              <img class="orbit-ingredient orbit-ingredient--b" src="/assets/ingredients/tomato.png" alt="" />
+              <img class="orbit-ingredient orbit-ingredient--c" src="/assets/ingredients/lettuce.png" alt="" />
+            </div>
+            <img
+              class="spotlight-slide__product"
+              src="/assets/menu/hot-chicken-wings.png"
+              alt="Hot Chicken Wings"
+            />
+            <div class="spotlight-slide__footer">
+              <p><span>Juicy with proper heat</span><strong>₹149</strong></p>
+              <a class="spotlight-cta" href="#order">Get now</a>
+            </div>
+          </article>
+
+          <article class="spotlight-slide" data-spotlight-slide aria-hidden="true">
+            <p class="spotlight-slide__number">Spotlight no.04</p>
+            <h2 class="spotlight-slide__name">Chilli Cheesy Fries</h2>
+            <div class="spotlight-slide__halo" aria-hidden="true"></div>
+            <div class="spotlight-slide__ingredients" aria-hidden="true">
+              <img class="orbit-ingredient orbit-ingredient--a" src="/assets/ingredients/cheese.png" alt="" />
+              <img class="orbit-ingredient orbit-ingredient--b" src="/assets/ingredients/jalapeno.png" alt="" />
+              <img class="orbit-ingredient orbit-ingredient--c" src="/assets/ingredients/tomato.png" alt="" />
+            </div>
+            <img
+              class="spotlight-slide__product"
+              src="/assets/menu/chilli-cheesy-fries.png"
+              alt="Chilli Cheesy Fries"
+            />
+            <div class="spotlight-slide__footer">
+              <p><span>Loaded, cheesy, fiery</span><strong>₹119</strong></p>
+              <a class="spotlight-cta" href="#order">Get now</a>
+            </div>
+          </article>
+
+          <button class="spotlight-arrow spotlight-arrow--prev" type="button" aria-label="Previous spotlight item" data-spotlight-prev>
+            <span aria-hidden="true">←</span>
+          </button>
+          <button class="spotlight-arrow spotlight-arrow--next" type="button" aria-label="Next spotlight item" data-spotlight-next>
+            <span aria-hidden="true">→</span>
+          </button>
+          <p class="spotlight__hint">Use the arrows to discover</p>
+        </div>
+      </section>
+      </section>
+
+      <section class="brand-build" id="menu" aria-labelledby="brand-build-title">
+        <div class="brand-manifesto">
+          <div class="brand-manifesto__copy" data-reveal>
+            <p class="brand-manifesto__kicker">The EasyBites code</p>
+            <h2 class="brand-manifesto__statement" id="brand-build-title">
+              EasyBites makes food for the days that need a little
+              <span class="inline-sticker inline-sticker--comfort">comfort</span>.
+              Every box brings the
+              <span class="inline-sticker inline-sticker--crunch">crunch</span>,
+              enough
+              <span class="inline-sticker inline-sticker--sauce">sauce</span>
+              to leave evidence, and one Bengaluru promise:
+              <span class="inline-sticker inline-sticker--yumm">Always Yumm!</span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="brand-ticker" aria-hidden="true">
+          <div class="brand-ticker__track">
+            <span>Big crunch</span><i>✦</i>
+            <span>Bold sauce</span><i>✦</i>
+            <span>Zero boring bites</span><i>✦</i>
+            <span>Big crunch</span><i>✦</i>
+            <span>Bold sauce</span><i>✦</i>
+            <span>Zero boring bites</span><i>✦</i>
+          </div>
+        </div>
+
+        <div class="brand-card-stack">
+          <div class="brand-card-stack__heading" data-reveal>
+            <p>What EasyBites believes</p>
+            <h3>Four rules we <span>never break.</span></h3>
+          </div>
+
+          <div class="brand-rule-ingredients" aria-hidden="true">
+            <img
+              class="brand-rule-ingredient brand-rule-ingredient--lettuce"
+              src="/assets/ingredients/lettuce.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              class="brand-rule-ingredient brand-rule-ingredient--tomato"
+              src="/assets/ingredients/tomato.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              class="brand-rule-ingredient brand-rule-ingredient--jalapeno"
+              src="/assets/ingredients/jalapeno.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              class="brand-rule-ingredient brand-rule-ingredient--cheese"
+              src="/assets/ingredients/cheese.png"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              class="brand-rule-ingredient brand-rule-ingredient--patty"
+              src="/assets/ingredients/patty.png"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+
+          <article
+            class="brand-card brand-card--crunch"
+            data-brand-card
+            data-reveal
+          >
+            <header class="brand-card__header">
+              <span aria-hidden="true">•</span>
+              <span>The crunch rule</span>
+              <span aria-hidden="true">•</span>
+            </header>
+            <div class="brand-card__copy">
+              <p>No quiet bites</p>
+              <h3>Crunch should interrupt the conversation.</h3>
+              <span>
+                Crisp outside, full-volume inside. If the next table cannot
+                hear it, we are not done yet.
+              </span>
+            </div>
+          </article>
+
+          <article
+            class="brand-card brand-card--sauce"
+            data-brand-card
+            data-reveal
+          >
+            <header class="brand-card__header">
+              <span aria-hidden="true">•</span>
+              <span>The sauce rule</span>
+              <span aria-hidden="true">•</span>
+            </header>
+            <div class="brand-card__copy">
+              <p>Leave evidence</p>
+              <h3>Sauce belongs on the bite. And probably your sleeve.</h3>
+              <span>
+                Sweet, smoky, fiery or glossy—every sauce earns its place by
+                making the last bite as loud as the first.
+              </span>
+            </div>
+          </article>
+
+          <article
+            class="brand-card brand-card--comfort"
+            data-brand-card
+            data-reveal
+          >
+            <header class="brand-card__header">
+              <span aria-hidden="true">•</span>
+              <span>The comfort rule</span>
+              <span aria-hidden="true">•</span>
+            </header>
+            <div class="brand-card__copy">
+              <p>Bad-day insurance</p>
+              <h3>Comfort food with main-character energy.</h3>
+              <span>
+                Burgers, fries and chicken packed into a box that understands
+                the assignment before you even open it.
+              </span>
+            </div>
+          </article>
+
+          <article
+            class="brand-card brand-card--home"
+            data-brand-card
+            data-reveal
+          >
+            <header class="brand-card__header">
+              <span aria-hidden="true">•</span>
+              <span>The home rule</span>
+              <span aria-hidden="true">•</span>
+            </header>
+            <div class="brand-card__copy">
+              <p>Made here. Craved everywhere.</p>
+              <h3>Bengaluru born. Craving raised.</h3>
+              <span>
+                Global flavour, local appetite and the unmistakable EasyBites
+                habit of adding a little extra.
+              </span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="quality-orbit"
+        id="story"
+        aria-labelledby="quality-orbit-title"
+        data-quality-orbit
+      >
+        <div class="quality-orbit__sticky">
+          <div class="quality-orbit__heading">
+            <p>Why EasyBites</p>
+            <h2 id="quality-orbit-title">
+              Why
+              <span>EasyBites</span>
+            </h2>
+            <p class="quality-orbit__intro">
+              Four things every EasyBites order should deliver—moving together,
+              never cutting corners.
+            </p>
+          </div>
+
+          <div class="quality-orbit__axis" aria-hidden="true">
+            <span class="quality-orbit__ring"></span>
+            <img
+              class="quality-orbit__ingredient"
+              src="/assets/ingredients/cheese.png"
+              alt=""
+            />
+          </div>
+
+          <div class="quality-orbit__points">
+            <article class="quality-point" data-quality-point>
+              <span class="quality-point__number">01</span>
+              <h3><span aria-hidden="true">•</span> Made fresh <span aria-hidden="true">•</span></h3>
+              <p>Crispy, hot and built after you order—not waiting around for you.</p>
+            </article>
+
+            <article class="quality-point" data-quality-point>
+              <span class="quality-point__number">02</span>
+              <h3><span aria-hidden="true">•</span> Real ingredients <span aria-hidden="true">•</span></h3>
+              <p>Recognisable ingredients, bold seasoning and flavour you can actually taste.</p>
+            </article>
+
+            <article class="quality-point" data-quality-point>
+              <span class="quality-point__number">03</span>
+              <h3><span aria-hidden="true">•</span> No boring bites <span aria-hidden="true">•</span></h3>
+              <p>Every layer earns its place, from the first crunch to the last streak of sauce.</p>
+            </article>
+
+            <article class="quality-point" data-quality-point>
+              <span class="quality-point__number">04</span>
+              <h3><span aria-hidden="true">•</span> Bengaluru fast <span aria-hidden="true">•</span></h3>
+              <p>Local kitchens and a shorter route between your craving and the crunch.</p>
+            </article>
+          </div>
+
+          <p class="quality-orbit__hint" aria-hidden="true">
+            Scroll to revolve the EasyBites standard
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="best-sellers"
+        id="best-sellers"
+        aria-labelledby="best-sellers-title"
+        data-best-sellers
+      >
+        <div class="best-sellers__grid">
+          <div class="best-sellers__editorial" aria-hidden="true">
+            <div
+              class="best-sellers__editorial-slide best-sellers__editorial-slide--popcorn is-active"
+              data-best-seller-editorial
+            >
+              <span class="best-sellers__editorial-word">Saucy</span>
+              <img
+                src="/assets/menu/korean-popcorn.png"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="best-sellers__editorial-slide best-sellers__editorial-slide--burger"
+              data-best-seller-editorial
+            >
+              <span class="best-sellers__editorial-word">Stacked</span>
+              <img
+                src="/assets/menu/easy-burger-box.png"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="best-sellers__editorial-slide best-sellers__editorial-slide--wings"
+              data-best-seller-editorial
+            >
+              <span class="best-sellers__editorial-word">Fiery</span>
+              <img
+                src="/assets/menu/hot-chicken-wings.png"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="best-sellers__editorial-slide best-sellers__editorial-slide--fries"
+              data-best-seller-editorial
+            >
+              <span class="best-sellers__editorial-word">Loaded</span>
+              <img
+                src="/assets/menu/chilli-cheesy-fries.png"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="best-sellers__content">
+            <header class="best-sellers__intro">
+              <p>EasyBites best seller</p>
+              <h2 id="best-sellers-title">The bites Bengaluru keeps ordering.</h2>
+              <span>
+                Four crowd favourites. One dangerous question:
+                are you sharing?
+              </span>
+            </header>
+
+            <div class="best-sellers__stage">
+              <div class="best-sellers__slides" aria-live="polite">
+                <article
+                  class="best-seller-card best-seller-card--popcorn is-active"
+                  data-best-seller-card
+                  aria-hidden="false"
+                >
+                  <div class="best-seller-card__copy">
+                    <p>Best seller 01</p>
+                    <h3>Korean Popcorn — Large</h3>
+                    <span>Sticky Korean glaze, sesame crunch and a bowl that disappears fast.</span>
+                  </div>
+                  <img
+                    class="best-seller-card__product"
+                    src="/assets/menu/korean-popcorn.png"
+                    alt="Korean Popcorn Large"
+                    loading="lazy"
+                  />
+                  <span class="best-seller-card__price">₹259</span>
+                  <span class="best-seller-card__sticker" aria-hidden="true">
+                    <img
+                      src="/assets/stickers/korean-popcorn-face.png"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </span>
+                  <button
+                    class="best-seller-card__cart"
+                    type="button"
+                    data-add-to-cart
+                    data-product-name="Korean Popcorn — Large"
+                  >
+                    <span>Add to cart</span>
+                    <strong>₹259</strong>
+                  </button>
+                </article>
+
+                <article
+                  class="best-seller-card best-seller-card--burger"
+                  data-best-seller-card
+                  aria-hidden="true"
+                >
+                  <div class="best-seller-card__copy">
+                    <p>Best seller 02</p>
+                    <h3>Easy Burger Box</h3>
+                    <span>A burger, crispy sides and full comfort-food energy in one box.</span>
+                  </div>
+                  <img
+                    class="best-seller-card__product"
+                    src="/assets/menu/easy-burger-box.png"
+                    alt="Easy Burger Box"
+                    loading="lazy"
+                  />
+                  <span class="best-seller-card__price">₹284</span>
+                  <span class="best-seller-card__sticker" aria-hidden="true">
+                    <img
+                      src="/assets/stickers/burger-face.png"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </span>
+                  <button
+                    class="best-seller-card__cart"
+                    type="button"
+                    data-add-to-cart
+                    data-product-name="Easy Burger Box"
+                  >
+                    <span>Add to cart</span>
+                    <strong>₹284</strong>
+                  </button>
+                </article>
+
+                <article
+                  class="best-seller-card best-seller-card--wings"
+                  data-best-seller-card
+                  aria-hidden="true"
+                >
+                  <div class="best-seller-card__copy">
+                    <p>Best seller 03</p>
+                    <h3>Hot Chicken Wings</h3>
+                    <span>Crispy wings, a fiery finish and exactly zero polite bites.</span>
+                  </div>
+                  <img
+                    class="best-seller-card__product"
+                    src="/assets/menu/hot-chicken-wings.png"
+                    alt="Hot Chicken Wings"
+                    loading="lazy"
+                  />
+                  <span class="best-seller-card__price">₹149</span>
+                  <span class="best-seller-card__sticker" aria-hidden="true">
+                    <img
+                      src="/assets/stickers/hot-wing-face.png"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </span>
+                  <button
+                    class="best-seller-card__cart"
+                    type="button"
+                    data-add-to-cart
+                    data-product-name="Hot Chicken Wings"
+                  >
+                    <span>Add to cart</span>
+                    <strong>₹149</strong>
+                  </button>
+                </article>
+
+                <article
+                  class="best-seller-card best-seller-card--fries"
+                  data-best-seller-card
+                  aria-hidden="true"
+                >
+                  <div class="best-seller-card__copy">
+                    <p>Best seller 04</p>
+                    <h3>Chilli Cheesy Fries</h3>
+                    <span>Golden fries under a loud layer of cheese, chilli and sauce.</span>
+                  </div>
+                  <img
+                    class="best-seller-card__product"
+                    src="/assets/menu/chilli-cheesy-fries.png"
+                    alt="Chilli Cheesy Fries"
+                    loading="lazy"
+                  />
+                  <span class="best-seller-card__price">₹119</span>
+                  <span class="best-seller-card__sticker" aria-hidden="true">
+                    <img
+                      src="/assets/stickers/loaded-fries-face.png"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </span>
+                  <button
+                    class="best-seller-card__cart"
+                    type="button"
+                    data-add-to-cart
+                    data-product-name="Chilli Cheesy Fries"
+                  >
+                    <span>Add to cart</span>
+                    <strong>₹119</strong>
+                  </button>
+                </article>
+              </div>
+
+              <button
+                class="best-sellers__arrow best-sellers__arrow--previous"
+                type="button"
+                aria-label="Previous best seller"
+                data-best-seller-previous
+              >
+                <span aria-hidden="true">←</span>
+              </button>
+              <button
+                class="best-sellers__arrow best-sellers__arrow--next"
+                type="button"
+                aria-label="Next best seller"
+                data-best-seller-next
+              >
+                <span aria-hidden="true">→</span>
+              </button>
+
+              <p class="best-sellers__counter" aria-hidden="true">
+                <span data-best-seller-current>01</span>
+                <i></i>
+                <span>04</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer" id="footer">
+        <section
+          class="testimonials"
+          aria-labelledby="testimonials-title"
+        >
+          <div class="testimonials__title-window" aria-hidden="true">
+            <div class="testimonials__title-track">
+              <span>Testimonials</span>
+              <span>Testimonials</span>
+            </div>
+          </div>
+
+          <h2 class="sr-only" id="testimonials-title">
+            EasyBites testimonials
+          </h2>
+
+          <div class="testimonials__viewport">
+            <div class="testimonials__track" data-testimonial-track>
+              <div class="testimonials__group" data-testimonial-group>
+                <article class="testimonial-card">
+                  <header>
+                    <span aria-hidden="true">•</span>
+                    <h3>Anjali Sisoda</h3>
+                    <span aria-hidden="true">•</span>
+                  </header>
+                  <div class="testimonial-card__body">
+                    <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                    <blockquote>
+                      If you’re a fan of crispy, golden, deep-fried perfection,
+                      EasyBites should be at the top of your list. The staff is
+                      attentive and friendly, making you feel right at home the
+                      moment you walk in. The service is fast even during peak
+                      hours and the kitchen manages to keep everything fresh.
+                    </blockquote>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <header>
+                    <span aria-hidden="true">•</span>
+                    <h3>Namankit Mohanty</h3>
+                    <span aria-hidden="true">•</span>
+                  </header>
+                  <div class="testimonial-card__body">
+                    <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                    <blockquote>
+                      Man! Y’all made this popcorn chicken with so much love—my
+                      heart got filled. It was bussing! The tenderness and
+                      seasoning of the chicken was good and juicy. The Cajun
+                      burger was fire too. Definitely reordering again and
+                      again. Y’all just earned a fan.
+                    </blockquote>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <header>
+                    <span aria-hidden="true">•</span>
+                    <h3>Roshan Prakash</h3>
+                    <span aria-hidden="true">•</span>
+                  </header>
+                  <div class="testimonial-card__body">
+                    <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                    <blockquote>
+                      Visited EasyBites today. The atmosphere and the vibe were
+                      really good, and the staff helped us with everything—from
+                      taking the order to making sure it was delivered as
+                      quickly as possible. Thank you to the team and EasyBites
+                      for giving us a good experience.
+                    </blockquote>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <header>
+                    <span aria-hidden="true">•</span>
+                    <h3>Ariba Khan</h3>
+                    <span aria-hidden="true">•</span>
+                  </header>
+                  <div class="testimonial-card__body">
+                    <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                    <blockquote>
+                      EasyBites food is both tasty and affordable, making it a
+                      great option for anyone looking for delicious meals on a
+                      budget. I tried the Korean chicken wings, which were
+                      packed with flavour and spice. A solid choice for
+                      flavourful, budget-friendly meals!
+                    </blockquote>
+                  </div>
+                </article>
+
+                <article class="testimonial-card">
+                  <header>
+                    <span aria-hidden="true">•</span>
+                    <h3>Ankit Kumar</h3>
+                    <span aria-hidden="true">•</span>
+                  </header>
+                  <div class="testimonial-card__body">
+                    <span class="testimonial-card__quote" aria-hidden="true">“</span>
+                    <blockquote>
+                      The taste, packaging and value for money will wipe out
+                      the top MNCs from India. Splendid work. Although I rarely
+                      give reviews, this food made me give one.
+                    </blockquote>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="footer-info" aria-label="EasyBites information">
+          <div class="footer-info__brand">
+            <img
+              src="/assets/easybites-logo-transparent.png"
+              alt="EasyBites"
+              loading="lazy"
+            />
+            <p>Always Yumm!</p>
+            <a href="https://order.easybites.in/" target="_blank" rel="noreferrer">
+              Order online <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <nav class="footer-info__block footer-info__links" aria-label="Useful links">
+            <h2>Useful links</h2>
+            <a href="https://order.easybites.in/shipping-policy" target="_blank" rel="noreferrer">
+              Shipping Policy
+            </a>
+            <a href="https://order.easybites.in/privacy-policy" target="_blank" rel="noreferrer">
+              Privacy Policy
+            </a>
+            <a href="https://order.easybites.in/terms-and-conditions" target="_blank" rel="noreferrer">
+              Terms &amp; Conditions
+            </a>
+            <a href="https://order.easybites.in/promo-codes" target="_blank" rel="noreferrer">
+              Promo Codes
+            </a>
+            <a href="https://order.easybites.in/refund-policy" target="_blank" rel="noreferrer">
+              Refund Policy
+            </a>
+          </nav>
+
+          <div class="footer-info__block">
+            <h2>Payment methods</h2>
+            <div class="footer-payments" aria-label="Accepted payment methods">
+              <span>₹ Cash</span>
+              <span>Mastercard</span>
+              <span>G Pay</span>
+              <span>Paytm</span>
+              <span>Visa</span>
+              <span>UPI</span>
+            </div>
+          </div>
+
+          <address class="footer-info__block" id="locations">
+            <h2>Address</h2>
+            <p>
+              4th Floor, Yolee Grande, Street No.14,<br />
+              Pottery Road, Richards Town,<br />
+              Frazer Town
+            </p>
+          </address>
+
+          <div class="footer-info__block footer-info__contact">
+            <h2>Contact &amp; connect</h2>
+            <a href="mailto:care@easybites.in">care@easybites.in</a>
+            <a href="tel:+918040414141">08040414141</a>
+            <div class="footer-socials" aria-label="EasyBites social media">
+              <a
+                href="https://www.facebook.com/easybites.blr"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="EasyBites on Facebook"
+              >
+                f
+              </a>
+              <a
+                href="https://www.instagram.com/easybites_in/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="EasyBites on Instagram"
+              >
+                ig
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-info__legal">
+            <p>Copyright. All Rights Reserved.</p>
+            <a href="https://www.uengage.io/" target="_blank" rel="noreferrer">
+              Powered by Uengage
+            </a>
+          </div>
+        </section>
+      </footer>
+
+      <button class="replay-button" type="button" data-replay-intro>
+        Replay intro
+      </button>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
